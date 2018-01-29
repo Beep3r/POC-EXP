@@ -7,7 +7,6 @@ $ pip install --user requests argparse unicodedata
 # Info
 POC for CVE-2018-2636.
 
-Tested only on Windows systems. 
 
 # Usage example
 ```

@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+
+# Sorry for bad code practises. This is just a PoC, don't blame us very hard ¯\_(ツ)_/¯
 import requests
 import argparse
 import unicodedata

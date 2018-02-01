@@ -1,0 +1,5 @@
+{
+  "name"    : "CVE-2018-1000006 Demo",
+  "version" : "0.0.1",
+  "main"    : "main.js"
+}

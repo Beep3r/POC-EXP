@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+//get URL and read parameters
+var url = new URL(window.location.href);
+var e = url.searchParams.get("endpoint")?url.searchParams.get("endpoint"):"";
+var r = url.searchParams.get("reqmethod")?url.searchParams.get("reqmethod"):"";
+var c = url.searchParams.get("ct")?url.searchParams.get("ct"):"";
+var d = url.searchParams.get("jsonData")?url.searchParams.get("jsonData"):"";
+var p = url.searchParams.get("php_url")?url.searchParams.get("php_url"):"";
+//create embed object, and call SWF with defined parameters
+var obj = document.createElement("embed");
+obj.src="test.swf?endpoint="+e+"&reqmethod="+r+"&ct="+c+"&jsonData="+d+"&php_url="+p;
+document.body.append(obj);
+  
+//function for SWF ExternalInterface.call method - to receive the response from SWF
+function process(data)
+{
+document.body.innerText=data;
+}
+</script>
+</body>
+</html>

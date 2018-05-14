@@ -1,0 +1,15 @@
+{
+  "name": "dwisiswant0/CVE-2018-7600",
+  "description": "PoC for CVE-2018-7600 Drupal SA-CORE-2018-002 (Drupalgeddon 2).",
+  "keywords": ["cve-2018-7600", "drupalgeddon", "rce"],
+  "authors": [{
+    "name": "Dwi Siswanto",
+    "email": "dwi.siswanto98@gmail.com"
+  }],
+  "require": {
+    "php-curl-class/php-curl-class": "dev-master",
+    "mwhite/random-uagent": "dev-master"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
